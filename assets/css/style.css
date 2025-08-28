@@ -260,3 +260,17 @@ gap: .8rem;
     margin-left: 0;
   }
 }
+.cta {
+    flex-wrap: nowrap !important;  /* تمنع التفاف الأزرار */
+    overflow-x: auto;              /* تسمح بالتمرير أفقيًا إذا ضاقت */
+    gap: 0.5rem;                   /* مسافة بين الأزرار */
+  }
+  
+  /* تحسين مظهر التمرير على الموبايل */
+  .cta::-webkit-scrollbar {
+    height: 6px;
+  }
+  .cta::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+  }
